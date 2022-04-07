@@ -1,0 +1,2 @@
+# jpy_hackathon_lesson
+日本円ハッカソンのレッスン用リポジトリです
