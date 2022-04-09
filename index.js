@@ -1,1 +1,2 @@
-console.log("Hello World")
+console.log("こんにちは");
+console.log("JPYC！ JPYC!");
