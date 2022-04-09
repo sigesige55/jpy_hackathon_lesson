@@ -11,7 +11,7 @@ console.log("3");
 
 // 現在のブロックNoの取得
 let a;
-function myfunction() {
-  a = provider.getBlockNumber();
+async function myfunction() {
+  a = await provider.getBlockNumber();
 }
 console.log(a);
