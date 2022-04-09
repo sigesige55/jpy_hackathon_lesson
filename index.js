@@ -1,2 +1,2 @@
 console.log("こんにちは");
-console.log("JPYC！ JPYC!");
+console.log("JPYC! JPYC!");
