@@ -1,19 +1,11 @@
-//ページの読み込み完了メッセージ
+//雛形；関数内の処理を全部待ってから画面を表示する
 window.onload = async function() {
-  myFunction();
-//  alert("ページが読み込まれました！");
-}
-
-alert("こんにちは");
-console.log("JPYC! JPYC!");
-console.log("3");
-
-// *** 初期化 MetaMaskに接続して、最新のブロック番号取ってくる ***
-async function myFunction() {
-  const provider =await new ethers.provider.Web3Provider(window.ethereum);
+  
+  //メタマスクに接続してブロック番号を取ってくる
+  const provider = await new ethers.providers.Web3Provider(window.ethereum);
   const blocknumber = await provider.getBlockNumber();
   alert(blocknumber);
-}
+  
 
-// 
+}
 
