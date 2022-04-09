@@ -1,17 +1,19 @@
 //ページの読み込み完了メッセージ
-window.onload = function() {
-  alert("ページが読み込まれました！");
+window.onload = async function() {
+  myFunction();
+//  alert("ページが読み込まれました！");
 }
 
-console.log("こんにちは");
+alert("こんにちは");
 console.log("JPYC! JPYC!");
 console.log("3");
-// *** 初期化 MetaMaskに接続 ***
 
-
-// 現在のブロックNoの取得
-let a;
-async function myfunction() {
-  a = await provider.getBlockNumber();
+// *** 初期化 MetaMaskに接続して、最新のブロック番号取ってくる ***
+async function myFunction() {
+  const provider =await new ethers.provider.Web3Provider(window.ethereum);
+  const blocknumber = await provider.getBlockNumber();
+  alert(blocknumber);
 }
-console.log(a);
+
+// 
+
